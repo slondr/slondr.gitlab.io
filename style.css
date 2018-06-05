@@ -1,0 +1,24 @@
+html, body, .container {
+    height: 90%;
+}
+
+.container {
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 35px;
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    flex: 1;
+}
+
+
