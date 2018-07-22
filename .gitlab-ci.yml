@@ -2,7 +2,7 @@ deploy:
   script:
     - export BORG_PASSPHRASE=$PASSWORD
     - apt-get update -qq && apt-get install -y -qq lftp
-    - lftp -c "set ftp:ssl-allow no; open -u $USERNAME $HOST; mirror -Rnev ./ ./slondr.co.nf --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
+    - lftp -c "set ftp:ssl-allow no; open -u $USERNAME $HOST; mirror -Rnev ./ ./home/www/slondr.co.nf --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/"
   only:
     - master
 
