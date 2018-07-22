@@ -1,4 +1,4 @@
-This is the Gitlab.com repo hosting the source code for slondr.co.nf.
+This is the Gitlab.com repo hosting the source code for Version 4 of slondr.co.nf.
 
 It is updated occasionally and may not accurately reflect the actual website.
 
