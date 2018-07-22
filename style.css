@@ -1,24 +1,17 @@
-html, body, .container {
-    height: 90%;
-}
-
-.container {
-    font-family: sans-serif;
-    color: white;
-    background-color: black;
-    border-radius: 35px;
-    
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: space-evenly;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.item {
+body {
     text-align: center;
-    flex: 1;
+    margin: 15%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f2f2f2;
 }
 
+h1 {
+    color: green;
+    font-size: 4em;
+}
 
+a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 3em;
+}
