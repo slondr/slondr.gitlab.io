@@ -2,11 +2,11 @@ body {
     text-align: center;
     margin: 15%;
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: white;
+    background-color: #000048;
 }
 
 h1 {
-    color: #002D05;
+    color: white;
     font-size: 4em;
 }
 
