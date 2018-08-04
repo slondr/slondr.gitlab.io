@@ -1,8 +1,11 @@
-deploy:
-  script:
-    - chmod +r *
-    - apt-get update -qq && apt-get install -y -qq lftp
-    - lftp -c "set ftp:ssl-allow no; open -u $USERNAME,$PASSWORD $HOST; mirror -Rnev ./ ./slondr.co.nf --ignore-time --parallel=5 --exclude-glob .git* --exclude .git/"
-  only:
-    - master
+image: alpine:latest
 
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
