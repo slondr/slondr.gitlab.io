@@ -33,4 +33,6 @@ a {
 div {
     position: fixed;
     bottom: 0;
+    text-align: center;
+    color: #7c818c
 }
