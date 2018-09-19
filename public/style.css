@@ -19,6 +19,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 3em;
 }
 
 a {
@@ -36,6 +37,7 @@ a {
 .element {
     color: #5294e2;
     margin: auto;
+    font-size: 2em;
 }
 
 .footer {
