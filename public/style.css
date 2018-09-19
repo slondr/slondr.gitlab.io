@@ -34,6 +34,7 @@ a {
 .element {
     color: #5294e2;
     font-size: 3em;
+    margin: auto;
 }
 
 .footer {
