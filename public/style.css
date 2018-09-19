@@ -25,7 +25,11 @@ h1 {
 a {
     text-decoration: none;
 }
-    
+
+.container {
+    display: flex;
+}
+
 .element {
     color: #5294e2;
     font-size: 3em;
