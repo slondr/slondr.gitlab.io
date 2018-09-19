@@ -28,6 +28,7 @@ a {
 
 .container {
     display: flex;
+    align-content: space-between;
 }
 
 .element {
