@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
+    text-align: center;
 }
 
 a {
@@ -35,7 +35,6 @@ a {
 
 .element {
     color: #5294e2;
-    font-size: 3em;
     margin: auto;
 }
 
