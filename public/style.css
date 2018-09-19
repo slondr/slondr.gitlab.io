@@ -29,6 +29,7 @@ a {
 .container {
     display: flex;
     align-content: space-between;
+    flex-direction: column;
 }
 
 .element {
