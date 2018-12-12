@@ -51,3 +51,7 @@ a {
 .highlight {
     color: white;
 }
+
+pre {
+    display: inline;
+}
