@@ -22,7 +22,7 @@ Here are some of my favorite bands:
 Here are some of my favorite video games:
 
 <ul>
-  {% for game in site.data.games $}
+  {% for game in site.data.games %}
   <li><i>{{ game.title }}</i> by {{ game.dev }}</li>
   {% endfor %}
 </ul>
