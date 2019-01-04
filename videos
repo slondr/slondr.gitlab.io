@@ -6,10 +6,10 @@ layout: post
 Here's a collection of videos I've worked on.
 
 <table>
-  <th>
-    <td>Title</td>
-    <td>My Role</td>
-  </th>
+  <tr>
+    <td><b>Title</b></td>
+    <td><b>My Role</b></td>
+  </tr>
   <tr>
     <td><a href="https://www.youtube.com/watch?v=b1QucwbsJCo">Did You Just Assume My Genre?</a>
     <td>Co-producer, Actor, writer, assistant videographer</td>
