@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eric S. Londres</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div class="content">
+      {% include navbar.md %}
+      <h2 class="title">{{ page.title }}</h2>
+      {% if page.index != true %}
+      <div class="inline-date"><i>{{ page.date | date: '%B %-d, %Y' %}</i></div>
+      <div class="container">
+	{{ content }}
+      </div>
+      {% include footer.md %}
+    </div>
+  </body>
+</html>
+
