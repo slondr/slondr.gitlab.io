@@ -20,11 +20,18 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 4em;
 }
 
 a {
     text-decoration: none;
+}
+
+a:link {
+    color: #e6db74;
+}
+
+a:visited {
+    color: #fd971f;
 }
 
 .container {
@@ -33,12 +40,6 @@ a {
     justify-concent: space-evenly;
     align-items: center;
     flex-direction: column;
-}
-
-.element {
-    color: #fd9715;
-    margin: auto;
-    font-size: 3em;
 }
 
 .footer {
