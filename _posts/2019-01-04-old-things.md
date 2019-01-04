@@ -2,7 +2,8 @@
 date: 2019-01-04
 layout: post
 slug: old-things
-title: Old Things
+draft: true
+title: The Relevance of Old Things
 ---
 
 I like old things.
