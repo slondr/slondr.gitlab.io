@@ -1,9 +1,21 @@
 title: Eric S. Londres
+author: Eric S. Londres
 email: elondres@stevens.edu
-description: >
-  Eric S. Londres
-baseurl: "/public"
-url: "/public"
+description: "Eric S. Londres's personal website and blog"
+baseurl: ""
+url: "https://slondr.ml"
 
 exclude:
-    - Gemfile
+  - Gemfile
+
+include:
+  - .well-known
+
+gitlab:
+  repository_url: https://gitlab.com/slondr/slondr.gitlab.io
+  branch: master
+
+gems:
+  - jekyll-feed
+  - rouge
+  
