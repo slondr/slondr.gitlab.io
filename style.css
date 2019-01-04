@@ -17,6 +17,10 @@ div.navbar {
     word-spacing: 5px;
 }
 
+ul, table {
+    line-height: 1.7;
+}
+
 a {
     text-decoration: none;
 }
