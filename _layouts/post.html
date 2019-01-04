@@ -9,7 +9,7 @@
       {% include navbar.md %}
       <h2 class="title">{{ page.title }}</h2>
       {% if page.index != true %}
-      <div class="inline-date"><i>{{ page.date | date: '%B %-d, %Y' %}</i></div>
+      <div class="inline-date"><i>{{ page.date | date: '%B %-d, %Y' }}</i></div>
       <div class="container">
 	{{ content }}
       </div>
