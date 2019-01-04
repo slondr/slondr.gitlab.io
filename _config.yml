@@ -1,0 +1,8 @@
+title: SITTV Campus Television
+email: sittvstevens@gmail.com
+description: >
+  SITTV Campus Television
+baseurl: "/public"
+url: "/public"
+
+exclude: ["README.md"]
