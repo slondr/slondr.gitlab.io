@@ -11,6 +11,13 @@ exclude:
 include:
   - .well-known
 
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM # Github Flavored Markdown
+  hard_wrap: false
+highlighter: rouge
+  
 gitlab:
   repository_url: https://gitlab.com/slondr/slondr.gitlab.io
   branch: master
