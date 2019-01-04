@@ -10,7 +10,6 @@ exclude:
 
 include:
   - .well-known
-  - favorites.md
 
 gitlab:
   repository_url: https://gitlab.com/slondr/slondr.gitlab.io
