@@ -1,0 +1,58 @@
+/*  This file is part of slondr.gitlab.io.
+    slondr.gitlab.io is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    slondr.gitlab.io is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with slondr.gitlab.io.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+body {
+    margin: 8%;
+    font-family: sans-serif;
+    background-color: #272822;
+    color: gray;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-content: space-between;
+    justify-concent: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.element {
+    color: #fd9715;
+    margin: auto;
+    font-size: 3em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.highlight {
+    color: white;
+}
+
+pre {
+    display: inline;
+}
