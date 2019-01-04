@@ -24,5 +24,6 @@ gitlab:
 
 gems:
   - jekyll-feed
+  - kramdown
   - rouge
   
