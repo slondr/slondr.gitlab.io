@@ -8,14 +8,7 @@ Here's a collection of works I've published.
 <h3>Articles for <i>The Stute</i></h3>
 
 <ul>
-  <li><a href="https://thestute.com/2018/09/28/stevens-president-earned-over-1-6-million-in-2016-tax-documents-show-azmsmk/">Stevens President earned over $1.6 million in 2016, tax documents show</a>
-  <li><a href="https://thestute.com/2018/10/05/donated-ship-located/">Donated ship located</a>
-  <li><a href="https://thestute.com/2018/10/19/shivers-in-river/">Residents of River Terrace furious after weeks of issues</a>
-  <li><a href="https://thestute.com/2018/10/26/facilities-responds-to-river-terrace-concerns/">Facilities responds to River Terrace concerns</a>
-  <li><a href="https://thestute.com/2018/11/09/priority-scheduling-is-out-of-control/">Priority scheduling is out of control</a>
-  <li><a href="https://thestute.com/2018/11/09/sga-votes-against-dissolving-redshift/">SGA votes against dissolving RedShift</a>
-  <li><a href="https://thestute.com/2018/11/16/darlak-withdraws-from-election-mid-race/">Darlak withdraws from election mid-race</a>
-  <li><a href="https://thestute.com/2018/11/30/only-incoming-first-year-students-will-be-allowed-to-live-on-campus-next-year/">Only incoming students will be allowed to live on campus next year</a>
-  <li><a href="https://thestute.com/2018/11/30/senate-budget-committee-holds-semesterly-budget-meeting/">Senate Budget Committee holds semesterly budget meeting</a>
-  <li><a href="https://thestute.com/2018/11/30/stevens-christian-fellowship-promoted-to-probationary-rso/">Stevens Christian Fellowship promoted to Probationary RSO</a>
+  {% for pub in site.data.publications %}
+  <li><a href="{{ pub.link }}">{{ pub.title }}</a></li>
+  {% endfor %}
 </ul>
