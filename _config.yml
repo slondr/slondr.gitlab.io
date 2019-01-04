@@ -2,7 +2,7 @@ title: Eric S. Londres
 email: elondres@stevens.edu
 description: >
   Eric S. Londres
-baseurl: "/public"
-url: "/public"
+baseurl: "/"
+url: "/"
 
 exclude: ["README.md"]
