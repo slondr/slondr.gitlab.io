@@ -5,6 +5,8 @@ description: "Eric S. Londres's personal website and blog"
 baseurl: ""
 url: "https://slondr.ml"
 
+post_dirs: false
+
 exclude:
   - Gemfile
 
