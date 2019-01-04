@@ -1,6 +1,6 @@
-- band: Pink Floyd
-- band: Soundgarden
-- band: Queens of the Stone Age
-- band: The White Stripes
-- band: Nirvana
+- name: Pink Floyd
+- name: Soundgarden
+- name: Queens of the Stone Age
+- name: The White Stripes
+- name: Nirvana
   
