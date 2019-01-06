@@ -8,12 +8,12 @@ Here's a collection of videos I've worked on.
 <table>
   <tr>
     <td><b>Title</b></td>
-    <td><b>My Role</b></td>
+    <td class="right"><b>My Role</b></td>
   </tr>
   {% for vid in site.data.videos %}
   <tr>
     <td><a href="{{ vid.link }}">{{ vid.title }}</a></td>
-    <td style="text-align: right">{{ vid.role }}</td>
+    <td class="right">{{ vid.role }}</td>
   </tr>
   {% endfor %}
   
