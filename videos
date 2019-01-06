@@ -18,15 +18,6 @@ Here's a collection of videos I've worked on.
   {% endfor %}
   
 <table>
-  <tr>
-    <td><b>Title</b></td>
-    <td><b>My Role</b></td>
-  </tr>
-  <tr>
-    <td><a href="https://www.youtube.com/watch?v=b1QucwbsJCo">Did You Just Assume My Genre?</a>
-    <td>Co-producer, Actor, writer, assistant videographer</td>
-  </tr>
-  <tr>
     <td><a href="https://www.youtube.com/watch?v=Matf7kY8d-s">Ping</a>
     <td>Executive producer, storyboard designer, editor</td>
   </tr>
