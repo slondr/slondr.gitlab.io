@@ -59,7 +59,7 @@ div {
 
 /** An element that fades in */
 div.content {
-    animation-name: fadeIn;
+    animation-name: fadeInDown;
 }
 
 /** An element that fades in and slides up */
