@@ -50,7 +50,7 @@ pre {
 /* Fade Animations */
 
 /** Basic styles for an animated element */
-.content {
+div {
     animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
@@ -58,17 +58,17 @@ pre {
 }
 
 /** An element that fades in */
-.scene_element--fadein {
+div.content {
     animation-name: fadeIn;
 }
 
 /** An element that fades in and slides up */
-.scene_element--fadeinup {
+footer {
     animation-name: fadeInUp;
 }
 
 /** An element that fades in and slides from the right */
-div {
+div.container {
     animation-name: fadeInRight;
 }
 
