@@ -50,7 +50,7 @@ pre {
 /* Fade Animations */
 
 /** Basic styles for an animated element */
-div {
+div, footer {
     animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
@@ -58,7 +58,7 @@ div {
 }
 
 /** An element that fades in */
-div.content {
+div.navbar {
     animation-name: fadeInDown;
 }
 
