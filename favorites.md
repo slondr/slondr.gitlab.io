@@ -1,6 +1,6 @@
 ---
 title: Favorites
-layout: post
+layout: default
 ---
 
 {% for fav in site.data.favorites %}
