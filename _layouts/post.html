@@ -12,7 +12,7 @@
       <div class="inline-date"><i>{{ page.date | date: '%B %-d, %Y' }}</i></div>
       {% endif %}
       <div class="container">
-	{{ content | markdownify }}
+	{{ page.content | markdownify }}
       </div>
       {% include footer.md %}
     </div>
