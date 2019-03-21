@@ -13,9 +13,11 @@ As it turns out, by default with Jekyll you can either include a file into a ren
 
 This was a surprisingly non-trivial problem to fix. Initial googling led me to [this Github issue at Jekyll](https://github.com/jekyll/jekyll/issues/1303), which describes my exact problem. The issue was posted in July of 2013 and there was still discussion on it as of this month. The reccomended solution, which I also found mirrored in an accepted answer to [this StackOverflow question](https://stackoverflow.com/questions/27771508/showing-markdown-content-in-a-div), was to make a custom capture command like this:
 
-```
+```liquid
+{% raw %}
 {% capture navbar %}{% include navbar.md %}{% endcapture %}
 {{ navbar | markdownify }}
+{% endraw %}
 ```
 
 Unfortunately this also didn't work. I originally had my navigation bar and footer defined as a layout called "raw" which included no additional formatting. When I applied the reccomended fix above, the [front matter](https://jekyllrb.com/docs/front-matter/) of the layout was getting rendered incorrectly as Markdown, causing horizontal lines and broken JSON appearing on-screen, but the actual content of the header and footer were still appearing as raw syntax! Getting rid of the front matter didn't help, as now nothing was being rendered as Markdown at all.
