@@ -1,4 +1,7 @@
+---
+# Footer. Must be parsed as markdown.
+---
 <footer>
   <hr>
-  © 2019 Eric S. Londres. This website is licensed under the terms of the <a href="/gpl.txt">GNU GPL</a>. You can view the source code <a href="{{ site.gitlab.repository_url }}">here</a>.
+  © 2019 Eric S. Londres. This website is licensed under the terms of the [GNU GPL](/gpl.txt). You can view the source code [here]({{ site.gitlab.repository_url }}).
 </footer>
