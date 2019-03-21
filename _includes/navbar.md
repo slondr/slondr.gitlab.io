@@ -1,6 +1,3 @@
----
-layout: raw
----
 <div class="navbar">
 [home](/)
 [blog](/blog/)
