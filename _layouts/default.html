@@ -11,8 +11,10 @@
       <div class="container">
 	{{ content }}
       </div>
+      <footer>
       {% capture footer %}{% include footer.md %}{% endcapture %}
       {{ footer | markdownify }}
+      </footer>
     </div>
   </body>
 </html>
