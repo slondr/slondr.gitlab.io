@@ -1,5 +1,4 @@
 ---
-# Must be parsed as Markdown
 layout: raw
 ---
 <div class="navbar">
