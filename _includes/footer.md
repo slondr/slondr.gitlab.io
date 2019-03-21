@@ -1,5 +1,6 @@
 ---
 # Footer. Must be parsed as markdown.
+layout: raw
 ---
 <footer>
   <hr>
