@@ -15,4 +15,4 @@ I somewhat maintain [a blog](/blog) on this website, where I periodically post a
 
 I've also dabbled in game development. Right from this website, you can play [a text-based adventure game about Stevens](/Burger) that I wrote (but forgot to submit) for a Game Jam in 2017. It was never fully finished, but is technically playable from intro to credits. I completed a [much smaller, yet fully finished, spiritual successor](/Sleep) for a similar Game Jam in 2019.
 
-If you'd like to get in contact with me, [shoot me an email](mailto:ericlondres@outlook.com) or hit me up on <a [LinkedIn](https://www.linkedin.com/in/eric-londres-153239171). I'm usually more responsive to the former. If you'd like to send me an encrypted email, you can find my public key [here](/pubkey).
+If you'd like to get in contact with me, [shoot me an email](mailto:ericlondres@outlook.com) or hit me up on [LinkedIn](https://www.linkedin.com/in/eric-londres-153239171). I'm usually more responsive to the former. If you'd like to send me an encrypted email, you can find my public key [here](/pubkey).
