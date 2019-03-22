@@ -9,7 +9,7 @@ layout: default
 
 I'm an undergraduate student at Stevens Institute of Technology and  <a href="https://gitlab.com/slondr">a programmer by trade</a>. I also enjoy <a href="https://www.youtube.com/channel/UC5o62RNnvTBYlFZhJVmV0XQ">making videos</a> in my spare time, as well as <a href="https://www.twitch.tv/slondr">gaming</a>.
 
-I currently hold the position of Director of Deliverables for <a href="https://www.sittv.org">SITTV</a>, <a href="https://www.youtube.com/SITTV">Stevens's television station</a>. I occasionaly write and edit articles for <a href="http://thestute.com/">The Stute</a>, Stevens's newspaper. I'm also a member of the Alpha Phi Omega national service fraternity's [Theta Alpha chapter](https://apota.org), where I presently serve as Webmaster.
+I currently hold the position of Director of Deliverables for [SITTV](https://www.sittv.org), Stevens's television station](https://www.youtube.com/SITTV). I occasionaly write and edit articles for [The Stute](http://thestute.com), Stevens's newspaper. I'm also a member of the Alpha Phi Omega national service fraternity's [Theta Alpha chapter](https://apota.org), where I presently serve as Webmaster.
 
 I somewhat maintain [a blog](/blog) on this website, where I periodically post about technology or anything that crosses my mind.
 
