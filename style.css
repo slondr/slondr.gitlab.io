@@ -43,6 +43,10 @@ pre {
     display: inline;
 }
 
+li p {
+    margin: 1px;
+}
+
 .right {
     text-align: right;
 }
