@@ -1,6 +1,7 @@
 ---
-# Jekyll must parse this file as Markdown
+title: GNU General Public License
 ---
+<link rel="stylesheet" href="/style.css">
 ### GNU GENERAL PUBLIC LICENSE
 
 Version 3, 29 June 2007
