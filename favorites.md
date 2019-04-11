@@ -5,3 +5,4 @@ layout: default
 {% for fav in site.data.favorites %}
 * [{{ fav.title }}]({{ fav.link }})
 {% endfor %}
+<div id="cont_568eff0d7e4b6de40ceec1beb8d251e3"><script type="text/javascript" async src="https://www.theweather.com/wid_loader/568eff0d7e4b6de40ceec1beb8d251e3"></script></div>
