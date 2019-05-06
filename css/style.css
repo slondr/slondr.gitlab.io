@@ -1,13 +1,12 @@
 body {
-    margin: 4%;
-    font-family: sans-serif;
+    font-size: 1.3em;
     background-color: #272822;
     color: white;
 }
 
 div.content {
-    margin: 20px auto 0px auto;
-    max-width: 650px;
+    margin: auto;
+    max-width: 900px;
     line-height: 1.2;
 }
 
