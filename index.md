@@ -7,7 +7,7 @@ layout: default
 
 # I'm Eric S. Londres.
 
-I'm an undergraduate student at Stevens Institute of Technology and [a programmer by trade](https://gitlab.com/slondr). I also enjoy [making videos](https://www.youtube.com/channel/UC5o62RNnvTBYlFZhJVmV0XQ) in my spare time, as well as [gaming](https://www.twitch.tv/slondr).
+I'm an undergraduate student at Stevens Institute of Technology and [a programmer by trade](https://gitlab.com/slondr). I also enjoy [filmmaking](https://www.youtube.com/channel/UC5o62RNnvTBYlFZhJVmV0XQ) in my spare time, as well as [gaming](https://www.twitch.tv/slondr).
 
 I currently hold the position of President at [SITTV](https://www.sittv.org), [Stevens's television station](https://www.youtube.com/SITTV). I occasionaly write and edit articles for [The Stute](http://thestute.com), Stevens's newspaper. I'm also a member of the Alpha Phi Omega national service fraternity's [Theta Alpha chapter](https://apota.org), where I presently serve as Webmaster.
 
