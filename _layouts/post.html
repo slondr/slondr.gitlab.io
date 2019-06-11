@@ -6,10 +6,10 @@
   </head>
   <body>
     <div class="content">
-      <div class="navbar">
-      {% capture navbar %}{% include navbar.md %}{% endcapture %}
-      {{ navbar | markdownify }}
-      </div>
+      <nav>
+	{% capture navbar %}{% include navbar.md %}{% endcapture %}
+	{{ navbar | markdownify }}
+      </nav>
       <h2 class="title">{{ page.title }}</h2>
       {% if page.index != true %}
       <div class="inline-date"><i>{{ page.date | date: '%B %-d, %Y' }}</i></div>
@@ -18,8 +18,8 @@
 	{{ content }}
       </div>
       <footer>
-      {% capture footer %}{% include footer.md %}{% endcapture %}
-      {{ footer | markdownify }}
+	{% capture footer %}{% include footer.md %}{% endcapture %}
+	{{ footer | markdownify }}
       </footer>
     </div>
   </body>

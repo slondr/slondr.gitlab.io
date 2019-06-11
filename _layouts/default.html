@@ -6,10 +6,10 @@
   </head>
   <body>
     <div class="content">
-      <div class="navbar">
+      <nav>
 	{% capture navbar %}{% include navbar.md %}{% endcapture %}
 	{{ navbar | markdownify }}
-      </div>
+      </nav>
       <div class="container">
 	{{ content }}
       </div>
