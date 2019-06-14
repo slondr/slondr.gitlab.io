@@ -3,10 +3,10 @@ body {
     max-width: 900px;
     background-color: #272822;
     color: white;
+    margin: auto;
 }
 
 div.content {
-    margin: auto;
     line-height: 1.2;
 }
 
