@@ -29,7 +29,7 @@ a:visited {
     color: #fd971f;
 }
 
-.container {
+main {
     display: flex;
     align-content: space-between;
     flex-direction: column;

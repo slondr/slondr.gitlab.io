@@ -14,9 +14,9 @@
       {% if page.index != true %}
       <div class="inline-date"><i>{{ page.date | date: '%B %-d, %Y' }}</i></div>
       {% endif %}
-      <div class="container">
+      <main>
 	{{ content }}
-      </div>
+      </main>
       <footer>
 	{% capture footer %}{% include footer.md %}{% endcapture %}
 	{{ footer | markdownify }}

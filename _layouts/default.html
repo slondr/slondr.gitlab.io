@@ -9,9 +9,9 @@
       {% capture navbar %}{% include navbar.md %}{% endcapture %}
       {{ navbar | markdownify }}
     </nav>
-    <div class="container">
+    <main>
       {{ content }}
-    </div>
+    </main>
     <footer>
       {% capture footer %}{% include footer.md %}{% endcapture %}
       {{ footer | markdownify }}
