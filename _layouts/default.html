@@ -5,19 +5,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
-    <div class="content">
-      <nav>
-	{% capture navbar %}{% include navbar.md %}{% endcapture %}
-	{{ navbar | markdownify }}
-      </nav>
-      <div class="container">
-	{{ content }}
-      </div>
-      <footer>
+    <nav>
+      {% capture navbar %}{% include navbar.md %}{% endcapture %}
+      {{ navbar | markdownify }}
+    </nav>
+    <div class="container">
+      {{ content }}
+    </div>
+    <footer>
       {% capture footer %}{% include footer.md %}{% endcapture %}
       {{ footer | markdownify }}
-      </footer>
-    </div>
+    </footer>
   </body>
 </html>
 
