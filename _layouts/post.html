@@ -10,9 +10,9 @@
 	{% capture navbar %}{% include navbar.md %}{% endcapture %}
 	{{ navbar | markdownify }}
       </nav>
-      <h2 class="title">{{ page.title }}</h2>
+      <h2>{{ page.title }}</h2>
       {% if page.index != true %}
-      <div class="inline-date"><i>{{ page.date | date: '%B %-d, %Y' }}</i></div>
+      <div><i>{{ page.date | date: '%B %-d, %Y' }}</i></div>
       {% endif %}
       <main>
 	{{ content }}
