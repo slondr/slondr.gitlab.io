@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Games
 layout: post
 ---
 
