@@ -1,0 +1,25 @@
+{
+  "name": "slondr.ml",
+  "version": "2.0.0",
+  "description": "The personal website of Eric S. Londres.",
+  "main": "index.html",
+  "dependencies": {
+    "metalsmith-markdown": "^1.2.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-layouts": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/slondr/slondr.gitlab.io.git"
+  },
+  "author": "Eric S. Londres",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/slondr/slondr.gitlab.io/issues"
+  },
+  "homepage": "https://gitlab.com/slondr/slondr.gitlab.io#readme.org"
+}
