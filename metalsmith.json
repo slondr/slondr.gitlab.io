@@ -6,6 +6,8 @@
     },
     "plugins": {
 	"metalsmith-markdown": {},
-	"metalsmith-in-place": {}
+	"metalsmith-in-place": {
+	    "pattern": "src/*"
+	}
     }
 }
