@@ -8,7 +8,7 @@ pages:
     paths:
     - node_modules/
   script:
-  - npm install metalsmith
+  - npm install
   - make build
   artifacts:
     paths:
