@@ -43,6 +43,10 @@ li p {
     margin: 1px;
 }
 
+ul {
+    list-style-type: upper-greak;
+}
+
 /* Fade Animations */
 
 /** Basic styles for an animated element */
