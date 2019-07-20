@@ -16,7 +16,7 @@ include:
 # Build settings
 markdown: kramdown
 kramdown:
-  input: GFM # Github Flavored Markdown
+  input: GFM # Github Flavoerd Markdown
   hard_wrap: false
 highlighter: rouge
   
