@@ -5,6 +5,7 @@
 	"description": "The personal website of Eric S. Londres"
     },
     "plugins": {
-	"metalsmith-markdown": {}
+	"metalsmith-markdown": {},
+	"metalsmith-in-place": {}
     }
 }
