@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-<!-- slondr.ml is Copyright Eric S. Londres
-     This website is distributed under the terms of the GNU GPLv3 or any later version.
-  -->
 
 # I'm Eric S. Londres.
 
