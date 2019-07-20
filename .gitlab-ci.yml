@@ -1,26 +1,15 @@
-image: ruby:2.3
+image: node:latest
 
 variables:
-  JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
-before_script:
-  - bundle install
-
-test:
-  stage: test
-  script:
-  - bundle exec jekyll build -d test
-  artifacts:
-    paths:
-    - test
-  except:
-  - master
-
 pages:
-  stage: deploy
+  cache:
+    paths:
+    - node_modules/
   script:
-  - bundle exec jekyll build -d public/
+  - npm install metalsmith
+  - make build
   artifacts:
     paths:
     - public

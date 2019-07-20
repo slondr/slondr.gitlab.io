@@ -1,0 +1,10 @@
+{
+    "destination": "./public",
+    "metadata": {
+	"title": "Eric S. Londres",
+	"description": "The personal website of Eric S. Londres",
+    },
+    "plugins": {
+	"metalsmith-markdown": {},
+    },
+}
