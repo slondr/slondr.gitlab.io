@@ -1,9 +1,9 @@
 ---
 date: 2019-01-04
-layout: post
 slug: old-things
 title: The Relevance of Old Things
 ---
+{% extends "layout/post.html" %}
 
 I've always been fascinated by old things. As a teenager, I had a map of the world in 550 A.D. on my wall. My favorite movie as a young adult was *Troy*.
 
