@@ -5,12 +5,18 @@ body {
     color: white;
     margin: auto;
     line-height: 1.2;
+    
+    
 }
 
 nav {
     display: inline-block;
     padding: 10px;
     word-spacing: 5px;
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
 }
 
 ul, table {
@@ -50,20 +56,10 @@ ul {
 /* Fade Animations */
 
 /** Basic styles for an animated element */
-div, footer {
+footer {
     animation-duration: 0.25s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
-    
-}
-
-/** An element that fades in */
-div.navbar {
-    animation-name: fadeInDown;
-}
-
-/** An element that fades in and slides up */
-footer {
     animation-name: fadeInUp;
 }
 
