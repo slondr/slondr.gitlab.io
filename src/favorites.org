@@ -19,10 +19,10 @@
 </iframe>
 #+END_HTML
 
-+[["https://my.stevens.edu/][MyStevens]]
++[[https://my.stevens.edu/][MyStevens]]
 +[[https://todoist.com/app][Todoist]]
 +[[https://web.stevens.edu/peoplefinder/][People finder]]
-+[[Canvas]]
++[[https://sit.instructure.com/][Canvas]]
 +[[https://wd5.myworkday.com/stevens][Workday]]
 +[[https://ducklink.stevens.edu/][DuckLink]]
 +[[https://emsweb.stevens.edu/VirtualEMS/][Virtual EMS]]
