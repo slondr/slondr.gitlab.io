@@ -7,7 +7,7 @@
     },
     "plugins": {
 	"metalsmith-in-place": {
-
+	    "setFilename": true
 	}
     }
 }
