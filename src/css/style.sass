@@ -1,0 +1,62 @@
+%animate
+  animation-duration: 1s
+  transition-timing-function: ease-in
+  animation-fill-mode: both
+
+body
+  font-size: 1.3em
+  max-width: 80ch
+  background-color: #272822
+  color: white
+  margin: auto
+  line-height: 1.2
+
+header
+  @extend %animate
+  animation-name: fadeInDown
+  width: 100%
+
+footer
+  @extend %animate
+  animation-name: fadeInUp
+
+nav
+  text-align: center
+  margin: 10px
+  word-spacing: 5px
+
+a
+  text-decoration: none
+  &:link
+    color: #e6db74
+  &:visited
+    color: #fd971f
+
+main
+  display: flex
+  align-content: space-between
+  flex-direction: column
+
+ul
+  list-style-type: lower-greek
+
+/* Animation definitions
+
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    transform: translate3d(0, -100%, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+
+@keyframes fadeInUp
+  0%
+    opacity: 0
+    transform: translate3d(0, 100%, 0)
+
+  100%
+    opacity: 1
+    transform: none
