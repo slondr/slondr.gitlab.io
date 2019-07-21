@@ -6,7 +6,8 @@
   "dependencies": {
     "jstransformer-markdown": "^1.2.1",
     "metalsmith": "^2.3.0",
-    "metalsmith-in-place": "^4.4.0"
+    "metalsmith-in-place": "^4.4.0",
+    "metalsmith-org": "^0.1.2"
   },
   "devDependencies": {},
   "scripts": {
