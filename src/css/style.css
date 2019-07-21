@@ -9,11 +9,15 @@ body {
     
 }
 
+header {
+    width: 100%;
+}
+
 nav {
-    display: inline-block;
-    padding: 10px;
+    text-align: center;
+    margin: 10px;
     word-spacing: 5px;
-    animation-duration: 0.25s;
+    animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: fadeInDown;
@@ -57,7 +61,7 @@ ul {
 
 /** Basic styles for an animated element */
 footer {
-    animation-duration: 0.25s;
+    animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     animation-name: fadeInUp;
