@@ -1,55 +1,52 @@
-#+BEGIN_HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Eric S. Londres</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
-<body>
-<nav>
+#+HTML: <!DOCTYPE html>
+#+HTML:<html lang="en">
+#+HTML:<head>
+#+HTML:<title>Eric S. Londres</title>
+#+HTML:<link rel="stylesheet" type="text/css" href="css/style.css"/>
+#+HTML:</head>
+#+HTML:<body>
+#+HTML:<nav>
 
-<p><a href="/">home</a>
-<a href="/games/">games</a>
-<a href="/blog/">blog</a>
-<a href="/publications/">publications</a></p>
+#+HTML:<p><a href="/">home</a>
+#+HTML:<a href="/games/">games</a>
 
-</nav>
-<main>
-<iframe src="https://duckduckgo.com/search.html?bgcolor=272822&amp;focus=yes" style="overflow:hidden;margin:0;padding:0;max-width:900px;height:60px;" frameborder="0">
-</iframe>
-#+END_HTML
+#+HTML:</nav>
+#+HTML:<main>
+#+HTML:<iframe src="https://duckduckgo.com/search.html?bgcolor=272822&amp;focus=yes" style="overflow:hidden;margin:0;padding:0;max-width:900px;height:60px;" frameborder="0">
+#+HTML:</iframe>
 
-+[[https://my.stevens.edu/][MyStevens]]
-+[[https://todoist.com/app][Todoist]]
-+[[https://web.stevens.edu/peoplefinder/][People finder]]
-+[[https://sit.instructure.com/][Canvas]]
-+[[https://wd5.myworkday.com/stevens][Workday]]
-+[[https://ducklink.stevens.edu/][DuckLink]]
-+[[https://emsweb.stevens.edu/VirtualEMS/][Virtual EMS]]
-+[[https://messages.google.com/web/][Google Messages]]
-+[[http://stevens.e-cater.com/default.php][Stevens Catering]]
-+[[https://youtube.com][YouTube]]
-+[[https://apota.org/][Alpha Phi Omega — Theta Alpha]]
-+[[https://sit.teamdynamix.com/TDNext/Home/Desktop/Default.aspx][TeamDynamix]]
-+[[https://web.groupme.com/chats][GroupMe]]
-+[[https://kek.gg/][kek.gg]]
-+[[https://rechneronline.de/musik/interval.php][Interval Calculator]]
-+[[http://www.donaldsonworkshop.com/baraboo/songwriting/songwriting.html][Writing Songs that Don’t Suck]]
-+[[https://www.guitar-chords.org.uk/c-major-chord.html][Guitar Chords]]
-+[[http://127.0.0.1:43110/1PLAYgDQboKojowD3kwdb3CtWmWaokXvfp][Play]]
++ [[https://gitlab.com/slondr][GitLab]]
++ [[https://my.stevens.edu/][MyStevens]]
++ [[https://todoist.com/app][Todoist]]
++ [[https://web.stevens.edu/peoplefinder/][People finder]]
++ [[https://sit.instructure.com/][Canvas]]
++ [[https://apota.org/][Alpha Phi Omega — Theta Alpha]]
++ [[https://wd5.myworkday.com/stevens][Workday]]
++ [[https://youtube.com][YouTube]]
++ [[https://ducklink.stevens.edu/][DuckLink]]
++ [[https://emsweb.stevens.edu/VirtualEMS/][Virtual EMS]]
++ [[https://messages.google.com/web/][Google Messages]]
++ [[http://127.0.0.1:43110/1PLAYgDQboKojowD3kwdb3CtWmWaokXvfp][Play]]
++ [[https://web.groupme.com/chats][GroupMe]]
++ [[http://stevens.e-cater.com/default.php][Stevens Catering]]
++ [[https://github.com/slondr][GitHub]]
++ [[https://sit.teamdynamix.com/TDNext/Home/Desktop/Default.aspx][TeamDynamix]]
++ [[https://kek.gg/][kek.gg]]
++ [[https://rechneronline.de/musik/interval.php][Interval Calculator]]
++ [[http://www.donaldsonworkshop.com/baraboo/songwriting/songwriting.html][Writing Songs that Don’t Suck]]
++ [[https://www.guitar-chords.org.uk/c-major-chord.html][Guitar Chords]]
 
-#+BEGIN_HTML
-<div id="cont_d59b9658b0ffc396f7f7cbb6f0de78ca">
-<script type="text/javascript" async="" src="https://www.theweather.com/wid_loader/d59b9658b0ffc396f7f7cbb6f0de78ca"></script>
-</div>
 
-</main>
-<footer>
+#+HTML:<div id="cont_d59b9658b0ffc396f7f7cbb6f0de78ca">
+#+HTML:<script type="text/javascript" async="" src="https://www.theweather.com/wid_loader/d59b9658b0ffc396f7f7cbb6f0de78ca"></script>
+#+HTML:</div>
 
-<hr />
-<p>© 2019 Eric S. Londres. This website is licensed under the terms of the <a href="/GPL">GNU GPL</a>. You can view the source code <a href="https://gitlab.com/slondr/slondr.gitlab.io">here</a>.</p>
+#+HTML:</main>
+#+HTML:<footer>
 
-</footer>
-</body>
-</html>
-#+END_HTML
+#+HTML:<hr />
+#+HTML:<p>© 2019 Eric S. Londres. This website is licensed under the terms of the <a href="/GPL">GNU GPL</a>. You can view the source code <a href="https://gitlab.com/slondr/slondr.gitlab.io">here</a>.</p>
+
+#+HTML:</footer>
+#+HTML:</body>
+#+HTML:</html>
