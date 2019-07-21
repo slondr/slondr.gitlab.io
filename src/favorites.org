@@ -9,8 +9,6 @@
 
 #+HTML:<p><a href="/">home</a>
 #+HTML:<a href="/games/">games</a>
-#+HTML:<a href="/blog/">blog</a>
-#+HTML:<a href="/publications/">publications</a></p>
 
 #+HTML:</nav>
 #+HTML:<main>
