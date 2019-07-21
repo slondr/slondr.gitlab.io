@@ -1,9 +1,9 @@
 ---
 date: 2019-03-21
-layout: post
 slug: jekyll-markdown
 title: Rendering Markdown in Jekyll Includes
 ---
+{% extends "layout/post.html" %}
 
 I made this site using [Jekyll](https://jekyllrb.com/) because it integrated well with Gitlab CI and I liked the syntax. One of the things I liked about it was ease of combining HTML formatted layouts with Markdown files as posts and pages. For example, the navigation bar and the top of this page and the footer at the bottom are rendered via Liquid tags on every page. 
 
