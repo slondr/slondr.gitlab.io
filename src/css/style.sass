@@ -12,6 +12,8 @@ body
   line-height: 1.2
 
 header
+  @extend %animate
+  animation-name: fadeInDown
   width: 100%
 
 footer
@@ -19,11 +21,9 @@ footer
   animation-name: fadeInUp
 
 nav
-  @extend %animate
   text-align: center
   margin: 10px
   word-spacing: 5px
-  animation-name: fadeInDown
 
 a
   text-decoration: none
