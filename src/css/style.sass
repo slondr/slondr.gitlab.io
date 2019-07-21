@@ -45,36 +45,18 @@ li p
 ul
   list-style-type: lower-greek
 
-/* Fade Animations
-
-/** Basic styles for an animated element
-
 footer
   @extend %animate
   animation-name: fadeInUp
 
-/** An element that fades in and slides from the right
-
-div.container
-  animation-name: fadeInRight
-
+/* Animation definitions
+  
 @keyframes fadeIn
   0%
     opacity: 0
 
   100%
     opacity: 1
-
-
-@keyframes fadeInRight
-  0%
-    opacity: 0
-    transform: translate3d(100%, 0, 0)
-
-  100%
-    opacity: 1
-    transform: none
-
 
 @keyframes fadeInDown
   0%
@@ -94,6 +76,3 @@ div.container
   100%
     opacity: 1
     transform: none
-
-
-/* End Fade Animations
