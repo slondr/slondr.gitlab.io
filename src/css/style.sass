@@ -1,3 +1,8 @@
+%animate
+  animation-duration: 1s
+  transition-timing-function: ease-in
+  animation-fill-mode: both
+
 body
   font-size: 1.3em
   max-width: 80ch
@@ -10,12 +15,10 @@ header
   width: 100%
 
 nav
+  @extend %animate
   text-align: center
   margin: 10px
   word-spacing: 5px
-  animation-duration: 1s
-  transition-timing-function: ease-in
-  animation-fill-mode: both
   animation-name: fadeInDown
 
 ul, table
@@ -47,9 +50,7 @@ ul
 /** Basic styles for an animated element
 
 footer
-  animation-duration: 1s
-  transition-timing-function: ease-in
-  animation-fill-mode: both
+  @extend %animate
   animation-name: fadeInUp
 
 /** An element that fades in and slides from the right
