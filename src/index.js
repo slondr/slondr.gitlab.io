@@ -16,11 +16,11 @@ const db = firebase.firestore();
 function updateValueById(id) {
     var linkCount;
     db.collection('links').doc(id).get().then(doc => {
-	if(isNaN(doc.count) || (!doc.count)) {
+	if(isNaN(doc.data().count)) {
 	    db.collection('links').doc(id).set({ count: 0 });
 	    linkCount = 0;
 	} else {
-	    linkCount = doc.count;
+	    linkCount = doc.data().count;
 	}
 	document.getElementById(id).innerHTML += ` (${linkCount})`;
     });
@@ -36,8 +36,12 @@ function updateClicks(id) {
 }
 
 const $ = id => {
-    updateValuebyId(id);
-    document.getElementById(id).addEventListener('click', () => updateClicks(id));
+    updateValueById(id);
+    document.getElementById(id).addEventListener('click', event => {
+	event.preventDefault();
+	updateClicks(id);
+	window.location = document.getElementById(id).href;
+    });
 };
 
 $('gitlab');
@@ -55,7 +59,6 @@ $('play');
 $('groupme');
 $('catering');
 $('github');
-$('catering');
 $('teamdynamix');
 $('kek');
 $('intervalcalculator');
