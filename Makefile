@@ -12,3 +12,7 @@ clean:
 	rm -rf dist
 	rm -rf public
 	npm ci
+
+run: build
+	serve public
+
