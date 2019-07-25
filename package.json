@@ -8,11 +8,12 @@
 	"jstransformer-markdown": "^1.2.1",
 	"jstransformer-sass": "^1.0.0",
 	"metalsmith": "^2.3.0",
-	"metalsmith-in-place": "^4.4.0",
+	"metalsmith-in-place": "^4.4.0"
     },
     "devDependencies": {
 	"webpack": "^4.37.0",
-	"webpack-cli": "^3.3.6"},
+	"webpack-cli": "^3.3.6"
+    },
     "scripts": {
 	"test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -21,7 +22,7 @@
 	"url": "git+ssh://git@gitlab.com/slondr/slondr.gitlab.io.git"
     },
     "author": "Eric S. Londres",
-    "license": "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later"
     "bugs": {
 	"url": "https://gitlab.com/slondr/slondr.gitlab.io/issues"
     },
