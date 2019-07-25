@@ -179,6 +179,8 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script async src='./favorites.js'></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -246,26 +248,26 @@ for the JavaScript code in this tag.
 </iframe>
 
 <ul class="org-ul">
-<li><a href="https://gitlab.com/slondr">GitLab</a></li>
-<li><a href="https://my.stevens.edu/">MyStevens</a></li>
-<li><a href="https://todoist.com/app">Todoist</a></li>
-<li><a href="https://web.stevens.edu/peoplefinder/">People finder</a></li>
-<li><a href="https://sit.instructure.com/">Canvas</a></li>
-<li><a href="https://apota.org/">Alpha Phi Omega — Theta Alpha</a></li>
-<li><a href="https://wd5.myworkday.com/stevens">Workday</a></li>
-<li><a href="https://youtube.com">YouTube</a></li>
-<li><a href="https://ducklink.stevens.edu/">DuckLink</a></li>
-<li><a href="https://emsweb.stevens.edu/VirtualEMS/">Virtual EMS</a></li>
-<li><a href="https://messages.google.com/web/">Google Messages</a></li>
-<li><a href="http://127.0.0.1:43110/1PLAYgDQboKojowD3kwdb3CtWmWaokXvfp">Play</a></li>
-<li><a href="https://web.groupme.com/chats">GroupMe</a></li>
-<li><a href="http://stevens.e-cater.com/default.php">Stevens Catering</a></li>
-<li><a href="https://github.com/slondr">GitHub</a></li>
-<li><a href="https://sit.teamdynamix.com/TDNext/Home/Desktop/Default.aspx">TeamDynamix</a></li>
-<li><a href="https://kek.gg/">kek.gg</a></li>
-<li><a href="https://rechneronline.de/musik/interval.php">Interval Calculator</a></li>
-<li><a href="http://www.donaldsonworkshop.com/baraboo/songwriting/songwriting.html">Writing Songs that Don’t Suck</a></li>
-<li><a href="https://www.guitar-chords.org.uk/c-major-chord.html">Guitar Chords</a></li>
+<li><a id="gitlab" href="https://gitlab.com/slondr">GitLab</a></li>
+<li><a id="mystevens" href="https://my.stevens.edu/">MyStevens</a></li>
+<li><a id="todoist" href="https://todoist.com/app">Todoist</a></li>
+<li><a id="peoplefinder" href="https://web.stevens.edu/peoplefinder/">People finder</a></li>
+<li><a id="canvas" href="https://sit.instructure.com/">Canvas</a></li>
+<li><a id="apota" href="https://apota.org/">Alpha Phi Omega — Theta Alpha</a></li>
+<li><a id="workday" href="https://wd5.myworkday.com/stevens">Workday</a></li>
+<li><a id="youtube" href="https://youtube.com">YouTube</a></li>
+<li><a id="ducklink" href="https://ducklink.stevens.edu/">DuckLink</a></li>
+<li><a id="virtualems" href="https://emsweb.stevens.edu/VirtualEMS/">Virtual EMS</a></li>
+<li><a id="googlemessages" href="https://messages.google.com/web/">Google Messages</a></li>
+<li><a id="play" href="http://127.0.0.1:43110/1PLAYgDQboKojowD3kwdb3CtWmWaokXvfp">Play</a></li>
+<li><a id="groupme" href="https://web.groupme.com/chats">GroupMe</a></li>
+<li><a id="catering" href="http://stevens.e-cater.com/default.php">Stevens Catering</a></li>
+<li><a id="github" href="https://github.com/slondr">GitHub</a></li>
+<li><a id="teamdynamix" href="https://sit.teamdynamix.com/TDNext/Home/Desktop/Default.aspx">TeamDynamix</a></li>
+<li><a id="kek" href="https://kek.gg/">kek.gg</a></li>
+<li><a id="intervalcalculator" href="https://rechneronline.de/musik/interval.php">Interval Calculator</a></li>
+<li><a id="songs" href="http://www.donaldsonworkshop.com/baraboo/songwriting/songwriting.html">Writing Songs that Don’t Suck</a></li>
+<li><a id="chords" href="https://www.guitar-chords.org.uk/c-major-chord.html">Guitar Chords</a></li>
 </ul>
 
 
