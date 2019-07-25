@@ -1,7 +1,6 @@
 // const firebase = require('firebase');
 import * as firebase from 'firebase';
 
-
 firebase.initializeApp({
     apiKey: "AIzaSyDeGcCLR3rxUHnSTnX11pPkPZzKQpn7wqA",
     authDomain: "slondr-site.firebaseapp.com",
@@ -14,22 +13,35 @@ firebase.initializeApp({
 
 const db = firebase.firestore();
 
-function update_clicks(id) {
+function updateValueById(id) {
+    var linkCount;
     db.collection('links').doc(id).get().then(doc => {
-	if(doc.exists) {
-	    db.collection('links').doc(id).set({
-		count: doc.count + 1,
-	    });
+	if(isNaN(doc.data().count)) {
+	    db.collection('links').doc(id).set({ count: 0 });
+	    linkCount = 0;
 	} else {
-	    db.collection('links').doc(id).set({
-		count: 1,
-	    });
+	    linkCount = doc.data().count;
 	}
+	document.getElementById(id).innerHTML += ` (${linkCount})`;
+    });
+}
+	
+
+function updateClicks(id) {
+    db.collection('links').doc(id).get().then(doc => {
+	db.collection('links').doc(id).set({
+	    count: (doc.count ? doc.count : 0) + 1
+	});
     });
 }
 
 const $ = id => {
-    document.getElementById(id).addEventListener('click', () => update_clicks(id));
+    updateValueById(id);
+    document.getElementById(id).addEventListener('click', event => {
+	event.preventDefault();
+	updateClicks(id);
+	window.location = document.getElementById(id).href;
+    });
 };
 
 $('gitlab');
@@ -47,7 +59,6 @@ $('play');
 $('groupme');
 $('catering');
 $('github');
-$('catering');
 $('teamdynamix');
 $('kek');
 $('intervalcalculator');
