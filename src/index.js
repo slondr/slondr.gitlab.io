@@ -1,7 +1,6 @@
 // const firebase = require('firebase');
 import * as firebase from 'firebase';
 
-
 firebase.initializeApp({
     apiKey: "AIzaSyDeGcCLR3rxUHnSTnX11pPkPZzKQpn7wqA",
     authDomain: "slondr-site.firebaseapp.com",
@@ -14,7 +13,21 @@ firebase.initializeApp({
 
 const db = firebase.firestore();
 
-function update_clicks(id) {
+function updateValueById(id) {
+    var linkCount;
+    db.collection('links').doc(id).get().then(doc => {
+	if(isNaN(doc.count) || (!doc.count)) {
+	    db.collection('links').doc(id).set({ count: 0 });
+	    linkCount = 0;
+	} else {
+	    linkCount = doc.count;
+	}
+	document.getElementById(id).innerHTML += ` (${linkCount})`;
+    });
+}
+	
+
+function updateClicks(id) {
     db.collection('links').doc(id).get().then(doc => {
 	db.collection('links').doc(id).set({
 	    count: (doc.count ? doc.count : 0) + 1
@@ -23,7 +36,8 @@ function update_clicks(id) {
 }
 
 const $ = id => {
-    document.getElementById(id).addEventListener('click', () => update_clicks(id));
+    updateValuebyId(id);
+    document.getElementById(id).addEventListener('click', () => updateClicks(id));
 };
 
 $('gitlab');
