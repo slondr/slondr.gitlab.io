@@ -16,15 +16,9 @@ const db = firebase.firestore();
 
 function update_clicks(id) {
     db.collection('links').doc(id).get().then(doc => {
-	if(doc.exists) {
-	    db.collection('links').doc(id).set({
-		count: doc.count + 1,
-	    });
-	} else {
-	    db.collection('links').doc(id).set({
-		count: 1,
-	    });
-	}
+	db.collection('links').doc(id).set({
+	    count: (doc.count ? doc.count : 0) + 1
+	});
     });
 }
 
