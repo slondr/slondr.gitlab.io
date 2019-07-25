@@ -16,6 +16,7 @@ const db = firebase.firestore();
 function updateValueById(id) {
     var linkCount;
     db.collection('links').doc(id).get().then(doc => {
+	console.log(`${id}:  ${doc.data().count}`);
 	if(isNaN(doc.data().count)) {
 	    db.collection('links').doc(id).set({ count: 0 });
 	    linkCount = 0;
@@ -25,12 +26,12 @@ function updateValueById(id) {
 	document.getElementById(id).innerHTML += ` (${linkCount})`;
     });
 }
-	
+
 
 function updateClicks(id) {
     db.collection('links').doc(id).get().then(doc => {
 	db.collection('links').doc(id).set({
-	    count: (doc.count ? doc.count : 0) + 1
+	    count: (doc.data().count ? doc.data().count : 0) + 1
 	});
     });
 }
