@@ -7,3 +7,8 @@ node_modules: package.json
 	npm install
 
 .PHONY: build
+
+clean:
+	rm -rf dist
+	rm -rf public
+	npm ci
