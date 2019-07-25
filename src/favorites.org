@@ -3,6 +3,7 @@
 #+HTML:<head>
 #+HTML:<title>Eric S. Londres</title>
 #+HTML:<link rel="stylesheet" type="text/css" href="css/style.css"/>
+#+HTML:<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
 #+HTML:</head>
 #+HTML:<body>
 #+HTML:<nav>
