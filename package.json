@@ -9,10 +9,10 @@
 	"jstransformer-sass": "^1.0.0",
 	"metalsmith": "^2.3.0",
 	"metalsmith-in-place": "^4.4.0",
-	"webpack": "^4.37.0",
-	"webpack-cli": "^3.3.6"
     },
-    "devDependencies": {},
+    "devDependencies": {
+	"webpack": "^4.37.0",
+	"webpack-cli": "^3.3.6"},
     "scripts": {
 	"test": "echo \"Error: no test specified\" && exit 1"
     },
