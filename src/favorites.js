@@ -1,3 +1,7 @@
+// const firebase = require('firebase');
+import * as firebase from 'firebase';
+
+
 firebase.initializeApp({
     apiKey: "AIzaSyDeGcCLR3rxUHnSTnX11pPkPZzKQpn7wqA",
     authDomain: "slondr-site.firebaseapp.com",
@@ -8,14 +12,16 @@ firebase.initializeApp({
     appId: "1:1033960889693:web:a4288d0ff950999f"
 });
 
+const db = firebase.firestore();
+
 function update_clicks(id) {
-    firebase.db.collection('links').doc(id).get().then(doc => {
+    db.collection('links').doc(id).get().then(doc => {
 	if(doc.exists) {
-	    firebase.db.collection('links').doc(id).set({
+	    db.collection('links').doc(id).set({
 		count: doc.count + 1,
 	    });
 	} else {
-	    firebase.db.collection('links').doc(id).set({
+	    db.collection('links').doc(id).set({
 		count: 1,
 	    });
 	}
