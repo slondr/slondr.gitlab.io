@@ -29,7 +29,7 @@ function update_clicks(id) {
 }
 
 const $ = id => {
-    document.getElementById(id).addEventListener('click', update_clicks(id));
+    document.getElementById(id).addEventListener('click', () => update_clicks(id));
 };
 
 $('gitlab');
