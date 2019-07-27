@@ -27,22 +27,18 @@
 	    that code without the copy of the GNU GPL normally required by
 	    section 4, provided you include this license notice and a URL
 	    through which recipients can access the Corresponding Source.
-
-
-	    @licend  The above is the entire license notice
-	    for the JavaScript code in this tag.
+	    @licend
 	  */
-	 <!--/*--><![CDATA[/*><!--*/
-				       function CodeHighlightOn(elem, id)
-				       {
-					   var target = document.getElementById(id);
-					   if(null != target) {
-					       elem.cacheClassElem = elem.className;
-					       elem.cacheClassTarget = target.className;
-					       target.className = "code-highlighted";
-					       elem.className   = "code-highlighted";
-					   }
-				       }
+	 function CodeHighlightOn(elem, id)
+	 {
+	     var target = document.getElementById(id);
+	     if(null != target) {
+		 elem.cacheClassElem = elem.className;
+		 elem.cacheClassTarget = target.className;
+		 target.className = "code-highlighted";
+		 elem.className   = "code-highlighted";
+	     }
+	 }
 	 function CodeHighlightOff(elem, id)
 	 {
 	     var target = document.getElementById(id);
