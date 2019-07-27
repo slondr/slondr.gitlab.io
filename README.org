@@ -1,0 +1,8 @@
+#+TITLE: Slondr.ml
+#+AUTHOR: Eric S. Londres
+
+This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at slondr.ml, but is also available at slondr.gitlab.io.
+
+The website is hosted on Gitlab.com Pages and updated via Gitlab CI.
+
+All code is copyright Eric S. Londres, and, where possible, is licensed under the terms of the GNU GPLv3 (or any later version).
