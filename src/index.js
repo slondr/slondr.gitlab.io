@@ -25,7 +25,7 @@ const $ = id => {
 		headers: { 'Content-Type': 'application/json' }
 	    });
 	    return response;
-	})().then(response => {
+	})(id).then(response => {
 	    console.log(response.status);
 	    window.location = document.getElementById(id).href;
 	});
