@@ -1,25 +1,16 @@
-const updateLinkCount = async id => {
-    const response = await fetch('https://api.slondr.ml/favorites', {
-	method: 'POST',
-	body: JSON.stringify({ id: id }),
-	headers: { 'Content-Type': 'application/json' }
-    });
-    console.log(response.status);
-};
+const uri = 'https://api.slondr.ml/favorites';
 
 const getLinkCount = id => {
     var linkCount;
-    fetch(`https://api.slondr.ml/favorites/${id}`).then(result => result.json()).then(response => document.getElementById(id).innerHTML += ` (${response.count})`).catch(error => console.error(error));
+    fetch(uri + id).then(result => result.json()).then(response => document.getElementById(id).innerHTML += ` (${response.count})`).catch(error => console.error(error));
 };
 
 const $ = id => {
-    // updateValueById(id);
     getLinkCount(id);
     document.getElementById(id).addEventListener('click', event => {
 	event.preventDefault();
-
 	(async id => {
-	    const response = await fetch('https://api.slondr.ml/favorites', {
+	    const response = await fetch(uri, {
 		method: 'POST',
 		body: JSON.stringify({ id: id }),
 		headers: { 'Content-Type': 'application/json' }
