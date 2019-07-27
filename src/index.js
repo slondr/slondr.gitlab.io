@@ -1,18 +1,17 @@
-// const firebase = require('firebase');
-import * as firebase from 'firebase';
+const updateLinkCount = id => {
+    fetch('//api.slondr.ml/favorites', {
+	method: 'POST',
+	body: { id: id },
+	headers: { 'Content-Type': 'application/json' }
+    }).then(result => result.json()).then(response => console.log(response)).catch(error => console.error(error)); 
+};
 
-firebase.initializeApp({
-    apiKey: "AIzaSyDeGcCLR3rxUHnSTnX11pPkPZzKQpn7wqA",
-    authDomain: "slondr-site.firebaseapp.com",
-    databaseURL: "https://slondr-site.firebaseio.com",
-    projectId: "slondr-site",
-    storageBucket: "",
-    messagingSenderId: "1033960889693",
-    appId: "1:1033960889693:web:a4288d0ff950999f"
-});
+const getLinkCount = id => {
+    var linkCount;
+    fetch(`//api.slondr.ml/favorites/${id}`).then(result => result.json()).then(response => document.getElementById(id).innerHTML += ` (${response.count})`).catch(error => console.error(error));
+};
 
-const db = firebase.firestore();
-
+/*
 function updateValueById(id) {
     var linkCount;
     db.collection('links').doc(id).get().then(doc => {
@@ -35,12 +34,14 @@ function updateClicks(id) {
 	});
     });
 }
+*/
 
 const $ = id => {
-    updateValueById(id);
+    // updateValueById(id);
+    getLinkCount(id);
     document.getElementById(id).addEventListener('click', event => {
 	event.preventDefault();
-	updateClicks(id);
+	updateLinkCount(id);
 	window.location = document.getElementById(id).href;
     });
 };
