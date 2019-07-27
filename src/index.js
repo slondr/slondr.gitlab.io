@@ -21,7 +21,7 @@ const $ = id => {
 	(async id => {
 	    const response = await fetch('https://api.slondr.ml/favorites', {
 		method: 'POST',
-		body: JSON.stringify({ id: 'github' }),
+		body: JSON.stringify({ id: id }),
 		headers: { 'Content-Type': 'application/json' }
 	    });
 	    return response;
