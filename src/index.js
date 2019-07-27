@@ -17,8 +17,7 @@ const $ = id => {
     getLinkCount(id);
     document.getElementById(id).addEventListener('click', event => {
 	event.preventDefault();
-	updateLinkCount(id);
-	window.location = document.getElementById(id).href;
+	updateLinkCount(id).then(window.location = document.getElementById(id).href);
     });
 };
 
