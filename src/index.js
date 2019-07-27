@@ -1,5 +1,5 @@
 const updateLinkCount = id => {
-    fetch('http://api.slondr.ml/favorites', {
+    fetch('//api.slondr.ml/favorites', {
 	method: 'POST',
 	body: { id: id },
 	headers: { 'Content-Type': 'application/json' }
@@ -8,7 +8,7 @@ const updateLinkCount = id => {
 
 const getLinkCount = id => {
     var linkCount;
-    fetch(`http://api.slondr.ml/favorites/${id}`).then(result => result.json()).then(response => document.getElementById(id).innerHTML += ` (${response.count})`).catch(error => console.error(error));
+    fetch(`//api.slondr.ml/favorites/${id}`).then(result => result.json()).then(response => document.getElementById(id).innerHTML += ` (${response.count})`).catch(error => console.error(error));
 };
 
 const $ = id => {
