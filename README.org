@@ -1,5 +1,8 @@
 #+TITLE: Slondr.ml
 #+AUTHOR: Eric S. Londres
+#+DATE: 2019-07-27
+#+EMAIL: elondres@stevens.edu
+#+LANGUAGE: en
 
 This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://slondr.ml/][slondr.ml]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
 
