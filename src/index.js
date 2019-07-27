@@ -8,11 +8,19 @@ const getLinkCount = node => {
 	.catch(error => console.error(error));
 };
 
+const updateLinkCount = async id => {
+    return await fetch(uri, {
+	method: 'POST',
+	body: JSON.stringify({ id: id }),
+	headers: { 'Content-Type': 'application/json' }
+    });
+};
+
 document.querySelectorAll('.favorite').forEach(node => {
     getLinkCount(node);
     node.addEventListener('click', event => {
 	event.preventDefault();
-	(async id => {
+	/* (async id => {
 	    const response = await fetch(uri, {
 		method: 'POST',
 		body: JSON.stringify({ id: id }),
@@ -23,5 +31,12 @@ document.querySelectorAll('.favorite').forEach(node => {
 	    console.log(response.status);
 	    window.location = node.href;
 	});
+	*/
+
+	updateLinkCount(node.id)
+	    .then(response => {
+		console.log(response.status);
+		window.location = node.href;
+	    });
     });
 });
