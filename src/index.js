@@ -5,10 +5,13 @@
  * For more information, see https://next.stoplight.io/slondr-studios/slondr-ml/version%2F1.0/Favorites.oas2.yml?view=/
  */
 
+/**
+ * Stores the fully qualified URL of the API server.
+*/
 const uri = 'https://api.slondr.ml/favorites';
 
 /**
- * getLinkCount implements getLinkCount of the Favorites API.
+ * Implements getLinkCount of the Favorites API.
  * Given a DOM node, retrieve the link click count from the database and update
    the node's display with the click count.
  * @param {object} node The DOM node to be profiled and updated.
@@ -23,7 +26,7 @@ const getLinkCount = node => {
 };
 
 /**
- * updateLinkCount implements updateLinkCount of the Favorites API.
+ * Implements updateLinkCount of the Favorites API.
  * Given an id representing a link, POSTs the server to increment the click count.
  * @param {string} id The link id to update in the database.
  * @returns {object} Returns the reponse from the API server.
