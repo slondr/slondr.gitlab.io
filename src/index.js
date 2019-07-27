@@ -31,13 +31,11 @@ const getLinkCount = node => {
  * @param {string} id The link id to update in the database.
  * @returns {object} Returns the reponse from the API server.
 */
-const updateLinkCount = async id => {
-    return await fetch(uri, {
-	method: 'POST',
-	body: JSON.stringify({ id: id }),
-	headers: { 'Content-Type': 'application/json' }
-    });
-};
+const updateLinkCount = async id => await fetch(uri, {
+    method: 'POST',
+    body: JSON.stringify({ id: id }),
+    headers: { 'Content-Type': 'application/json' }
+});
 
 document.querySelectorAll('.favorite').forEach(node => {
     getLinkCount(node);
