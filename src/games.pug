@@ -3,26 +3,30 @@ html
 	head
 		title Games
 		link(rel='stylesheet' href='/css/style.css')
+		link(rel='stylesheet' href='/css/content.css')
+		script(src='/starfield.js')
 	body
-		header
-			include includes/header.pug
-		main
-			h2 Games
-			p
-				| Right from this website, you can play 
-				a(href='/Burger') a text-based adventure game about Stevens 
-				| that I wrote (but forgot to submit) for a Game Jam in 2017. It was never fully finished, but is technically playable from intro to credits. I completed a 
-				a(href='/Sleep') much smaller, yet fully finished, spiritual successor 
-				| for a similar Game Jam in 2019.
-			p
-				| My first non-Inform-based game was completed for a later Game Jam and was written in fully POSIX C. Titled 
-				i Win Simulator
-				| , 
-				a(href='https://gitlab.com/slondr/win-simulator') you can view the source code on GitLab 
-				| — a major priority of mine during the project was writing correct code using canonical practices.
-			
+		div(class='fullScreen' id='fullScreen')
+			div(id='content')
+				header
+					include includes/header.pug
+				main
+					h2 Games
+					p
+						| Right from this website, you can play 
+						a(href='/Burger') a text-based adventure game about Stevens 
+						| that I wrote (but forgot to submit) for a Game Jam in 2017. It was never fully finished, but is technically playable from intro to credits. I completed a 
+						a(href='/Sleep') much smaller, yet fully finished, spiritual successor 
+						| for a similar Game Jam in 2019.
+						p
+							| My first non-Inform-based game was completed for a later Game Jam and was written in fully POSIX C. Titled 
+							i Win Simulator
+							| , 
+							a(href='https://gitlab.com/slondr/win-simulator') you can view the source code on GitLab 
+							| — a major priority of mine during the project was writing correct code using canonical practices.
 
 
-		footer
-			include includes/footer.pug
 
+				footer
+					include includes/footer.pug
+			canvas(id='canvas2d')
