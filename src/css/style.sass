@@ -3,13 +3,37 @@
   transition-timing-function: ease-in
   animation-fill-mode: both
 
-body
+html, body
   font-size: 1.3em
-  max-width: 80ch
-  background-color: #272822
+  background-color: black
+  overflow: hidden
+  padding: 0px
+  margin: 0px
+  width: 100%
+  height: 100%
   color: white
   margin: auto
   line-height: 1.2
+
+.fullScreen
+  width: 100%
+  height: 100%
+
+#content
+  position: absolute
+  max-width: 80ch
+  padding: 30px
+  border-radius: 60px
+  z-index: 2
+  background-color: #27282250
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  transition: 0.5s
+  &:hover
+    background-color: #272822B0
+// #content:hover
+//   background-color: #27282A0
 
 header
   @extend %animate
@@ -34,7 +58,9 @@ a
   &:hover
     color: #a6e22e
 
+
 main
+  max-width: 80ch
   display: flex
   align-content: space-between
   flex-direction: column
@@ -50,7 +76,15 @@ ul
 @media (max-width: 700px)
   .weather
     display: none
-  
+
+@media (max-width: 1280px)
+  #content
+    position: relative
+    max-width: 100%
+    margin: 5px
+    width: 100%
+    height: 100%
+    
 // Animation definitions
 
 @keyframes fadeInDown
