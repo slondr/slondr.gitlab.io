@@ -1,5 +1,8 @@
 image: node:latest
 
+include:
+  - template: Code-Quality.gitlab-ci.yml
+
 variables:
   LC_ALL: C.UTF-8
 
