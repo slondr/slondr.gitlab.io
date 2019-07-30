@@ -6,6 +6,6 @@
 
 This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://slondr.ml/][slondr.ml]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
 
-The website is hosted on Gitlab.com Pages and updated via Gitlab CI. The current version is =2.2.3.3= - you can view the full version release history in the tags.
+The website is hosted on Gitlab.com Pages and updated via Gitlab CI. The current version is =2.3= - you can view the full version release history in the tags.
 
 All code is copyright Eric S. Londres, and, where possible, is licensed under the terms of the GNU GPLv3 (or any later version).
