@@ -9,7 +9,9 @@
 
 # {{{imglnk(https://gitlab.com/slondr/slondr.gitlab.io/commits/master,https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg)}}}
 
-<a href="https://gitlab.com/slondr/slondr.gitlab.io/commits/master"><img src="https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg"/></a>
+
+
+[[https://gitlab.com/slondr/slondr.gitlab.io/commits/master][https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg]]
 
 This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://slondr.ml/][slondr.ml]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
 
