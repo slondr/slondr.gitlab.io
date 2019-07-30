@@ -3,9 +3,13 @@
 #+DATE: 2019-07-27
 #+EMAIL: elondres@stevens.edu
 #+LANGUAGE: en
+#+MACRO: imglnk @@html:<a href="$1"><img src="$2"></a>@@ # Used for displaying image links
 
 [[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/pipeline.svg]]
-[[https://gitlab.com/slondr/slondr.gitlab.io/commits/master][[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg]]]
+
+{{{imglink(https://gitlab.com/slondr/slondr.gitlab.io/commits/master,https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg)}}}
+
+
 
 This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://slondr.ml/][slondr.ml]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
 
