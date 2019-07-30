@@ -3,11 +3,11 @@
 #+DATE: 2019-07-27
 #+EMAIL: elondres@stevens.edu
 #+LANGUAGE: en
-#+MACRO: imglnk @@html:<a href="$1"><img src="$2"></a>@@ # Used for displaying image links
+#+MACRO: imglnk @@html:<a href="$1"><img src="$2"></a>@@
 
 [[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/pipeline.svg]]
 
-{{{imglink(https://gitlab.com/slondr/slondr.gitlab.io/commits/master,https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg)}}}
+{{{imglnk(https://gitlab.com/slondr/slondr.gitlab.io/commits/master,https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg)}}}
 
 
 
