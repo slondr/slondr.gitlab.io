@@ -13,7 +13,7 @@ const uri = 'https://api.slondr.ml/favorites';
 /**
  * Implements getLinkCount of the Favorites API.
  * Given a DOM node, retrieve the link click count from the database and update
-   the node's display with the click count.
+ * the node's display with the click count.
  * @param {object} node The DOM node to be profiled and updated.
  * @returns {undefined} Does not return.
  */
