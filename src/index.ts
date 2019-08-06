@@ -15,9 +15,9 @@ const uri = 'https://api.slondr.ml/favorites';
  * Given a DOM node, retrieve the link click count from the database and update
  * the node's display with the click count.
  * @param {object} node The DOM node to be profiled and updated.
- * @returns {undefined} Does not return.
+ * @returns {void} Does not return.
  */
-const getLinkCount = node => {
+const (getLinkCount: object): void = node => {
     var linkCount;
     fetch(uri + '/' + node.id)
 	.then(result => result.json())
@@ -31,7 +31,7 @@ const getLinkCount = node => {
  * @param {string} id The link id to update in the database.
  * @returns {object} Returns the reponse from the API server.
  */
-const updateLinkCount = async id => await fetch(uri, {
+const updateLinkCount = async (id: string): object => await fetch(uri, {
     method: 'POST',
     body: JSON.stringify({ id: id }),
     headers: { 'Content-Type': 'application/json' }
