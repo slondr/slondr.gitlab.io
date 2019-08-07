@@ -3,7 +3,7 @@ build: node_modules
 	npx metalsmith
 # mv dist/main.js public/index.js
 node_modules: package.json
-	npm install
+	npm ci
 
 .PHONY: build
 
