@@ -47,7 +47,7 @@ document.querySelectorAll('.favorite').forEach((node: HTMLAnchorElement) => {
         updateLinkCount(node.id)
             .then((response: { status: any; }) => {
                 console.log(response.status);
-                window.location = node.href;
+                window.location.href = node.href;
             });
     });
 });
