@@ -18,7 +18,6 @@ const uri = 'https://api.slondr.ml/favorites';
  * @returns {void} Does not return.
  */
 const getLinkCount = (node: object): void  => {
-    var linkCount;
     fetch(uri + '/' + node.id)
 	.then(result => result.json())
 	.then(response => node.innerHTML += ` (<span class='click-count'>${response.count}</span>)`)
