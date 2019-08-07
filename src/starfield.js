@@ -1,44 +1,41 @@
 /**
  * The stars in our starfield!
  * Stars coordinate system is relative to the CENTER of the canvas
- * @param  {number} x Latitude for star
- * @param  {number} y Longitude for star
- * @param  {number} maxSpeed Maximum allowed speed for star
+ * @param  {number} x 
+ * @param  {number} y
  */
-class Star {
-    constructor(x, y, maxSpeed) {
-        this.x = x;
-        this.y = y;
-        this.slope = y / x; // This only works because our origin is always (0,0)
-        this.opacity = 0;
-        this.speed = Math.max(Math.random() * maxSpeed, 1);
-    }
-    /**
-     * Compute the distance of this star relative to any other point in space.
-     *
-     * @param  {int} originX
-     * @param  {int} originY
-     *
-     * @return {float} The distance of this star to the given origin
-     */
-    distanceTo(originX, originY) {
-        return Math.sqrt(Math.pow(originX - this.x, 2) + Math.pow(originY - this.y, 2));
-    }
-    /**
-     * Reinitializes this star's attributes, without re-creating it
-     *
-     * @param  {number} x New X position
-     * @param  {number} y New Y position
-     * @param  {number} maxSpeed The maximum speed for the star
-     * @return {Star} this star
-     */
-    resetPosition(x, y, maxSpeed) {
-        Star.apply(this, arguments);
-        return this;
-    }
-}
+var Star = function (x, y, maxSpeed) {
+    this.x = x;
+    this.y = y;
+    this.slope = y / x; // This only works because our origin is always (0,0)
+    this.opacity = 0;
+    this.speed = Math.max(Math.random() * maxSpeed, 1);
+};
 
+/**
+ * Compute the distance of this star relative to any other point in space.
+ * 
+ * @param  {int} originX
+ * @param  {int} originY
+ * 
+ * @return {float} The distance of this star to the given origin
+ */
+Star.prototype.distanceTo = function (originX, originY) {
+    return Math.sqrt(Math.pow(originX - this.x, 2) + Math.pow(originY - this.y, 2));
+};
 
+/**
+ * Reinitializes this star's attributes, without re-creating it 
+ * 
+ * @param  {number} x 
+ * @param  {number} y
+ * 
+ * @return {Star} this star
+ */
+Star.prototype.resetPosition = function (x, y, maxSpeed) {
+    Star.apply(this, arguments);
+    return this;
+};
 
 /**
  * The BigBang factory creates stars (Should be called StarFactory, but that is
@@ -53,7 +50,7 @@ var BigBang = {
      * @param  {number} minY minimum Y coordinate of the region
      * @param  {number} maxX maximum X coordinate of the region
      * @param  {number} maxY maximum Y coordinate of the region
-     * @param  {number} maxSpeed Maximum speed allowed for the star
+     * 
      * @return {Star} The random star
      */
     getRandomStar: function (minX, minY, maxX, maxY, maxSpeed) {
@@ -84,7 +81,7 @@ var BigBang = {
  * Constructor function of our starfield. This just prepares the DOM nodes where
  * the scene will be rendered.
  * 
- * @param {string} containerId The DOM Id of the <div> containing a <canvas> tag
+ * @param {string} canvasId The DOM Id of the <div> containing a <canvas> tag
  */
 var StarField = function (containerId) {
     this.container = document.getElementById(containerId);
@@ -156,7 +153,6 @@ StarField.prototype._renderStarField = function () {
 /**
  * Function that handles the animation of each frame. Update the starfield
  * positions and re-render
- * @param  {number} elapsedTime The amount of time elapsed
  */
 StarField.prototype._renderFrame = function (elapsedTime) {
     var timeSinceLastFrame = elapsedTime - (this.prevFrameTime || 0);
