@@ -30,15 +30,11 @@ const getLinkCount = (node: HTMLAnchorElement): void => {
 * @param {string} id The link id to update in the database.
 * returns {object} Returns the reponse from the API server.
 */
-async function updateLinkCount(id: string) {
-    return await fetch(uri, {
-        // }
-        // const updateLinkCount = async (id: string) => await fetch(uri, {
-        method: 'POST',
-        body: JSON.stringify({ id: id }),
-        headers: { 'Content-Type': 'application/json' }
-    });
-}
+const updateLinkCount = async (id: string) => await fetch(uri, {
+    method: 'POST',
+    body: JSON.stringify({ id: id }),
+    headers: { 'Content-Type': 'application/json' }
+});
 
 document.querySelectorAll('.favorite').forEach((node: HTMLAnchorElement) => {
     getLinkCount(node);
