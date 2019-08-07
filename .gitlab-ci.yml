@@ -8,11 +8,7 @@ variables:
   LC_ALL: C.UTF-8
 
 pages:
-  cache:
-    paths:
-    - node_modules/
   script:
-  - npm install
   - make build
   artifacts:
     paths:
