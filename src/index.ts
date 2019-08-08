@@ -21,7 +21,10 @@ const getLinkCount = (node: HTMLAnchorElement): void => {
     fetch(uri + '/' + node.id)
         .then(result => result.json())
         .then(response => node.innerHTML += ` (<span class='click-count'>${response.count}</span>)`)
-        .catch(error => console.error(error));
+        .catch(error => {
+	    console.error(error);
+	    node.innerHTML += ' (<span class="click-count">0</span>)';
+	});
 };
 
 /**
@@ -36,7 +39,10 @@ const updateLinkCount = async (id: string) => await fetch(uri, {
     headers: { 'Content-Type': 'application/json' }
 });
 
-document.querySelectorAll('.favorite').forEach((node: HTMLAnchorElement) => {
+/**
+ * Run getLinkCount() on each favorite and attach click listeners to call updateLinkCount()
+ */
+(() => document.querySelectorAll('.favorite').forEach((node: HTMLAnchorElement) => {
     getLinkCount(node);
     node.addEventListener('click', event => {
         event.preventDefault();
@@ -46,4 +52,4 @@ document.querySelectorAll('.favorite').forEach((node: HTMLAnchorElement) => {
                 window.location.href = node.href;
             });
     });
-});
+}))();
