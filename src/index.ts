@@ -22,6 +22,7 @@ const getLinkCount = (node: HTMLAnchorElement): void => {
         .then(result => result.json())
         .then(response => node.innerHTML += ` (<span class='click-count'>${response.count}</span>)`)
         .catch(error => {
+	    console.error('An error has occured in getLinkCount()');
 	    console.error(error);
 	    node.innerHTML += ' (<span class="click-count">0</span>)';
 	});
