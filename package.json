@@ -20,7 +20,6 @@
 	"@babel/preset-typescript": "^7.3.3",
 	"babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
 	"babel-plugin-transform-es3-property-literals": "^6.22.0",
-	"babel-plugin-transform-runtime": "^6.23.0",
 	"core-js": "^3.1.4"
     },
     "babel": {
@@ -31,7 +30,8 @@
 		    "targets": {
 			"browsers": [
 			    "ie >= 6"
-			]
+			],
+			"module": false
 		    }
 		}
 	    ],
@@ -42,11 +42,8 @@
 	],
 	"plugins": [
 	    [
-		"transform-runtime",
-		{
-		    "polyfill": false,
-		    "regenerator": true
-		}
+		"@babel/plugin-transform-runtime",
+		{}
 	    ],
 	    "transform-es3-member-expression-literals",
 	    "transform-es3-property-literals",
