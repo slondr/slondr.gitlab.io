@@ -1,16 +1,16 @@
 # Mostly taken from https://gitlab.com/pages/metalsmith
 build: node_modules
 	npx metalsmith
-# mv dist/main.js public/index.js
+	npx babel src/index.ts > public/index.js
 node_modules: package.json
-	npm ci
+	yarn install
 
 .PHONY: build
 
 clean:
 	rm -rf dist
 	rm -rf public
-	npm ci
+	rm -rf node_modules
 
 run: build
 	serve public
