@@ -20,7 +20,7 @@ const uri: string = 'https://api.slondr.ml/favorites';
 const getLinkCount = (node: HTMLAnchorElement): void => {
     fetch(uri + '/' + node.id)
         .then(result => result.json())
-        .then(response => node.innerHTML += ` (<span class='click-count'>${response.count}</span>)`)
+        .then(response => node.innerHTML = `<span class='click-count'>${response.count}</span> ` + node.innerHTML)
         .catch(error => {
 	    console.error('An error has occured in getLinkCount()');
 	    console.error(error);
