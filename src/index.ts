@@ -21,20 +21,21 @@ const getLinkCount = (node: HTMLAnchorElement): void => {
     fetch(uri + '/' + node.id)
         .then(result => result.json())
 	.then(response => {
+	    // set link count value
 	    node.innerHTML += ` <span class='click-count'>${response.count}</span>`;
-	    node.style.color = (() => {
-		if(response.count > 100) {
-		    return 'green';
-		} else if(response.count > 50) {
-		    return 'GreenYellow';
-		} else if(response.count > 25) {
-		    return 'white';
-		} else if(response.count > 5) {
-		    return 'Gold';
-		} else {
-		    return 'red';
-		}
-	    })();
+
+	    // update link click count
+	    if(response.count > 100) {
+		node.querySelector('.click-count').style.color = 'green';
+	    } else if(response.count > 50) {
+		node.querySelector('.click-count').style.color = 'GreenYellow';
+	    } else if(response.count > 25) {
+		node.querySelector('.click-count').style.color = 'white';
+	    } else if(response.count > 5) {
+		node.querySelector('.click-count').style.color = 'Gold';
+	    } else {
+		node.querySelector('.click-count').style.color = 'red';
+	    }
 	})
         .catch(error => {
 	    alert('An error has occured in getLinkCount()');
