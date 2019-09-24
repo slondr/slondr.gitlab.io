@@ -20,7 +20,22 @@ const uri: string = 'https://api.slondr.ml/favorites';
 const getLinkCount = (node: HTMLAnchorElement): void => {
     fetch(uri + '/' + node.id)
         .then(result => result.json())
-	.then(response => node.innerHTML += ` <span class='click-count'>${response.count}</span>`)
+	.then(response => {
+	    node.innerHTML += ` <span class='click-count'>${response.count}</span>`;
+	    node.style.color = (() => {
+		if(response.count > 100) {
+		    return 'green';
+		} else if(response.count > 50) {
+		    return 'GreenYellow';
+		} else if(response.count > 25) {
+		    return 'white';
+		} else if(response.count > 5) {
+		    return 'Gold';
+		} else {
+		    return 'red';
+		}
+	    })();
+	})
         .catch(error => {
 	    alert('An error has occured in getLinkCount()');
 	    console.error(error);
