@@ -20,11 +20,26 @@ const uri: string = 'https://api.slondr.ml/favorites';
 const getLinkCount = (node: HTMLAnchorElement): void => {
     fetch(uri + '/' + node.id)
         .then(result => result.json())
-        .then(response => node.innerHTML = `<span class='click-count'>${response.count}</span> ` + node.innerHTML)
+	.then(response => {
+	    // set link count value
+	    node.innerHTML += ` <span class='click-count'>${response.count}</span>`;
+
+	    // update link click count
+	    if(response.count > 100) {
+		node.querySelector('.click-count').style.color = 'green';
+	    } else if(response.count > 50) {
+		node.querySelector('.click-count').style.color = 'GreenYellow';
+	    } else if(response.count > 25) {
+		node.querySelector('.click-count').style.color = 'white';
+	    } else if(response.count > 5) {
+		node.querySelector('.click-count').style.color = 'Gold';
+	    } else {
+		node.querySelector('.click-count').style.color = 'red';
+	    }
+	})
         .catch(error => {
-	    console.error('An error has occured in getLinkCount()');
+	    alert('An error has occured in getLinkCount()');
 	    console.error(error);
-	    node.innerHTML += ' (<span class="click-count">0</span>)';
 	});
 };
 
