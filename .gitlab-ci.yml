@@ -1,7 +1,7 @@
 image: alpine:latest
 
 include:
-  - template: Code-Quality.gitlab-ci.yml
+#  - template: Code-Quality.gitlab-ci.yml
 #  - template: Dependency-Scanning.gitlab-ci.yml
     
 pages:
