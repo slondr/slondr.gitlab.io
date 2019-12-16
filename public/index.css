@@ -23,10 +23,15 @@ h1 {
 }
 
 a {
+    margin: 8px;
     text-decoration: none;
     color: inherit;
 }
 
 #last-name {
     color: #66d9ef;
+}
+
+#icons {
+    margin: 1%;
 }
