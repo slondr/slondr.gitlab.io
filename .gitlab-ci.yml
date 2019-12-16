@@ -1,15 +1,13 @@
-image: node:latest
+image: alpine:latest
 
 include:
   - template: Code-Quality.gitlab-ci.yml
-  - template: Dependency-Scanning.gitlab-ci.yml
+#  - template: Dependency-Scanning.gitlab-ci.yml
     
-variables:
-  LC_ALL: C.UTF-8
-
 pages:
+  stage: deploy
   script:
-  - make build
+  - echo 'Deploying...'
   artifacts:
     paths:
     - public

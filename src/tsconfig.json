@@ -1,8 +1,0 @@
-{
-  "compileOnSave": true,
-  "compilerOptions": {
-    "noImplicitAny": true,
-    "removeComments": true,
-    "target": "es3"
-  }
-}

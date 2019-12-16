@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+body {
+    color: white;
+    background-color: #272822;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+#last-name {
+    color: #66d9ef;
+}
