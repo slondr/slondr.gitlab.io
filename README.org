@@ -1,13 +1,13 @@
-#+TITLE: Slondr.ml
-#+AUTHOR: Eric S. Londres
-#+DATE: 2019-07-27
-#+EMAIL: elondres@stevens.edu
-#+LANGUAGE: en
+#+title: EricLondr.es
+#+author: Eric S. Londres
+#+date: 2019-07-27
+#+email: elondres@stevens.edu
+#+language: en
 
-[[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/pipeline.svg]] [[https://gitlab.com/slondr/slondr.gitlab.io/commits/master][https://gitlab.com/slondr/slondr.gitlab.io/badges/master/coverage.svg]]
+[[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/pipeline.svg
 
-This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://slondr.ml/][slondr.ml]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
+This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://ericlondr.es/][EricLondr.es]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
 
-The website is hosted on Gitlab.com Pages and updated via Gitlab CI. The current version is =2.4= - you can view the full version release history in the tags.
+The website is hosted on Gitlab.com Pages and updated via Gitlab CI. The current version is =3.0= - you can view the full version release history in the tags.
 
 All code is copyright Eric S. Londres, and, where possible, is licensed under the terms of the GNU GPLv3 (or any later version).
