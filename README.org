@@ -4,7 +4,7 @@
 #+email: elondres@stevens.edu
 #+language: en
 
-[[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/pipeline.svg
+[[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/pipeline.svg]]
 
 This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://ericlondr.es/][EricLondr.es]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
 
