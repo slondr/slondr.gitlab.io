@@ -3,9 +3,10 @@ image: node:latest
 pages:
   stage: deploy
   script:
-  - npm i -g node-sass
-  - sass src/index.sass public/index.css
-  - sass src/about.sass public/about.css
+  - apk add grpc
+  - npm i node-sass
+  - npx sass src/index.sass public/index.css
+  - npx sass src/about.sass public/about.css
   artifacts:
     paths:
     - public
