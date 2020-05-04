@@ -22,14 +22,29 @@ h1 {
     font-size: 5em;
 }
 
-a {
+a, #guard {
     margin: 8px;
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
 
 footer {
-    
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav {
+    min-width: 5ch;
+    opacity: 85%;
+}
+
+#guard {
+    opacity: 50%;
 }
 
 #last-name {
