@@ -1,12 +1,11 @@
-image: alpine:latest
+image: node:latest
 
-include:
-#  - template: Code-Quality.gitlab-ci.yml
-    
 pages:
   stage: deploy
   script:
-  - echo 'Deploying...'
+  - npm i -g node-sass
+  - sass src/index.sass public/index.css
+  - sass src/about.sass public/about.css
   artifacts:
     paths:
     - public
