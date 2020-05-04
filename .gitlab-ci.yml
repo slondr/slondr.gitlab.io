@@ -5,8 +5,8 @@ pages:
   script:
   - apk add grpc
   - npm i node-sass
-  - npx scss src/index.sass public/index.css
-  - npx scss src/about.sass public/about.css
+  - npx sass src/index.sass public/index.css
+  - npx sass src/about.sass public/about.css
   artifacts:
     paths:
     - public
