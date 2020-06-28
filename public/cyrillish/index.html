@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>Cyrillish</title>
+	<script lang="javascript">
+	 function convert() {
+	     let ipa = document.getElementById('input-ipa').value;
+	     var cyrillish = [];
+
+	     for(let i = 0; i < ipa.length; ++i) {
+		 switch(ipa[i]) {
+		     case 'a':
+			 cyrillish.push('а');
+			 break;
+		     case 'b':
+			 cyrillish.push('б');
+			 break;
+		     case 'ʧ':
+			 cyrillish.push('ч');
+			 break;
+		     case 't':
+			 if(ipa[i+1] && ipa[i+1] === 's') {
+			     cyrillish.push('ц');
+			 } else {
+			     cyrillish.push('т');
+			 }
+			 break;
+		     case 'd':
+			 cyrillish.push('л');
+			 break;
+		     case 'ɛ':
+		     case 'e':
+			 cyrillish.push('е');
+			 break;
+		     case 'f':
+			 cyrillish.push('ф');
+			 break;
+		     case 'g':
+			 cyrillish.push('г');
+			 break;
+		     case 'h':
+			 cyrillish.push('х');
+			 break;
+		     case 'i':
+		     case 'I':
+		     case 'ɪ':
+			 cyrillish.push('и');
+			 break;
+		     case 'ʤ':
+			 cyrillish.push('џ');
+			 break;
+		     case 'k':
+			 if(ipa[i+1] && ipa[i+1] === 's') {
+			     cyrillish.push('қ');
+			     i++;
+			 } else {
+			     cyrillish.push('к');
+			 }
+			 break;
+		     case 'l':
+			 cyrillish.push('л');
+			 break;
+		     case 'm':
+			 cyrillish.push('м');
+			 break;
+		     case 'n':
+			 cyrillish.push('н');
+			 break;
+		     case 'o':
+		     case 'ɔ':
+			 cyrillish.push('о');
+			 break;
+		     case 'p':
+			 cyrillish.push('п');
+			 break;
+		     case 'r':
+			 cyrillish.push('р');
+			 break;
+		     case 's':
+			 cyrillish.push('с');
+			 break;
+		     case 'ʃ':
+			 cyrillish.push('ш');
+			 break;
+		     case 'ʌ':
+		     case 'ə':
+		     case 'u':
+			 cyrillish.push('у');
+			 break;
+		     case 'v':
+			 cyrillish.push('в');
+			 break;
+		     case 'w':
+			 cyrillish.push('ў');
+			 break;
+		     case 'j':
+			 cyrillish.push('ј');
+			 break;
+		     case 'z':
+			 cyrillish.push('з');
+			 break;
+		     case 'æ':
+			 cyrillish.push('э');
+			 break;
+		     case 'ŋ':
+			 cyrillish.push('ӊ');
+			 break;
+		     case 'ʒ':
+			 cyrillish.push('ж');
+			 break;
+		     case 'θ':
+			 cyrillish.push('ћ');
+			 break;
+		     case 'ð':
+			 cyrillish.push('ђ');
+			 break;
+		     default:
+			 cyrillish.push(ipa[i]);
+			 if(ipa[i] != ' ' && ipa[i] != '.' && ipa[i] != ',') {
+			     console.error(`${ipa[i]} is not an accepted IPA symbol`);
+			 }
+			 break;
+		 }
+	     }
+
+	     // publish the new string
+	     document.getElementById('output-cyrillish').textContent = cyrillish.join('');
+	 }
+	</script>
+    </head>
+    <body>
+	<span>Input IPA:</span>
+	<textarea id="input-ipa" oninput="convert()"></textarea>
+	<br/>
+	<span>Cyrillish:</span><div id="output-cyrillish"></div>
+    </body>
+</html>
