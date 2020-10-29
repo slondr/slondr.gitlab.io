@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
   - apk add grpc
-  - npm i node-sass
+  - npm i sass
   - npx sass src/index.sass public/index.css
   - npx sass src/about.sass public/about.css
   artifacts:
