@@ -10,4 +10,4 @@ This is the personal website of Eric S. Londres (=slondr=). It is primarily host
 
 The website is hosted on GitLab Pages and updated via Gitlab CI. The current version is =3.0= - you can view the full version release history in the tags.
 
-All code is copyright Eric S. Londres, and, where possible, is licensed under the terms of the GNU GPLv3 (or any later version).
+All code is copyright Eric S. Londres, and, where possible, is licensed under the terms of the GNU AGPLv3 (or any later version).
