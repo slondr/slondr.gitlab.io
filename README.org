@@ -6,7 +6,7 @@
 
 [[https://gitlab.com/slondr/slondr.gitlab.io/badges/master/pipeline.svg]]
 
-This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://ericlondr.es/][EricLondr.es]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
+This is the personal website of Eric S. Londres (=slondr=). It is primarily hosted at [[https://ericlondres.tech/][EricLondr.es]], but is also available at [[https://slondr.gitlab.io/][slondr.gitlab.io]].
 
 The website is hosted on GitLab Pages and updated via Gitlab CI. The current version is =3.0= - you can view the full version release history in the tags.
 
