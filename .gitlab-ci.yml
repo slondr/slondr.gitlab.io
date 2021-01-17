@@ -16,13 +16,21 @@
 
 image: node:alpine
 
+build:
+  stage: build
+  script:
+    - apk add grpc
+    - npm ci sass
+    - npx sass src/index.sass public/index.css
+    - npx sass src/about.sass public/about.css
+  artifacts:
+    paths:
+      - public
+
 pages:
   stage: deploy
   script:
-  - apk add grpc
-  - npm i sass
-  - npx sass src/index.sass public/index.css
-  - npx sass src/about.sass public/about.css
+  - echo hi
   artifacts:
     paths:
     - public
