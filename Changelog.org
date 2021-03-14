@@ -1,3 +1,4 @@
 * 3.0.6
 + Added a changelog
 + Added security.txt to establish a formal security policy
++ Fixed title of readme
