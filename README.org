@@ -1,4 +1,4 @@
-#+title: EricLondr.es
+#+title: EricLondres.tech
 #+author: Eric S. Londres
 #+date: 2019-07-27
 #+email: elondres@stevens.edu
