@@ -1,4 +1,5 @@
 Contact: ericlondres@outlook.com
-Expires: Thu, 30 Sep 2021 12:00 -0400Encryption: https://ericlondres.tech/pubkey
+Expires: Thu, 30 Sep 2021 12:00 -0400
+Encryption: https://ericlondres.tech/pubkey
 Preferred-Languages: en
 Canonical: https://ericlondres.tech/.well-known/security.txt
