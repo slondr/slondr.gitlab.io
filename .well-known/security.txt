@@ -1,0 +1,19 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:ericlondres@outlook.com
+Expires: Thu, 30 Sep 2021 12:00 -0400
+Encryption: https://ericlondres.tech/pubkey
+Preferred-Languages: en
+Canonical: https://ericlondres.tech/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEyRBKNl0B37KSu5yhotJbTVy5cOQFAmBOP9EACgkQotJbTVy5
+cOSKgAf+Mjn2EKQpkGH1CttFQ0sQdhjo0equKdVu3aZw2DWlOQsp9hdnuI4hmKQi
+eg20Ma9KW8xWoBgjfK7nT9r0kPRKg6qSSdj5eiohG8vzFuzqfx677WEIgZ3pRNVx
+zOqq62wu81K49pyr3iJOfGlJli0FMo3j116PwIkRrZkQrVSmIUGCcE7VZRlG/SwY
+fPwVxCWCjZ2GjWrnt/yzw9MeVkSTdFBOyprn6neMrd7jfaPra6xBmcgSN2keBrqv
+uuRW7+5SXEuII++uF9e428zQm9bawU7uqcglYUm391c/y2ByocqGHaKfijhBRc0Z
+2uN/WOMuhJWNneECMaVM2X4FC8d7sA==
+=PF6Y
+-----END PGP SIGNATURE-----
